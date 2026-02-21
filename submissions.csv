@@ -1,0 +1,543 @@
+Project Title,Submission Url,Project Status,Judging Status,Highest Step Completed,Project Created At,About The Project,"""Try it out"" Links",Video Demo Link,Opt-In Prizes,Built With,Notes,Team Colleges/Universities,Additional Team Member Count,List All Of The Universities Or Schools  That Your Team Members Currently Attend.,List All Of The Domain Names Your Team Has Registered With Domain.Com During This Hackathon.,"Share Feedback About Any Of The Technology You Interacted With At This Hackathon. Make Sure You Mention What Tech You're Reviewing (E.G. Git Hub, De So, Etc.)."
+Pilot ,"",Draft,Pending,Project details,11/05/2022 15:56:07,"Inspiration
+
+Get a good experience and in hackathon 
+
+What it does
+
+How we built it
+
+Challenges we ran into
+
+Accomplishments that we're proud of
+
+What we learned
+
+What's next for Pilot
+","",,"",java,,DePaul University,0,"","",""
+GoodCandy,https://demonhacks2022.devpost.com/submissions/367354-goodcandy,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 15:57:36,"Inspiration
+
+What it does
+
+GoodCandy is a service that relies on crowdsourcing to help kids have a safe and fun Halloween. The app allows you to rate houses based on their safeness and generosity on the night of Halloween. GoodCandy is meant to be used by both parents and children in order to help them determine which houses they should go to on Halloween for trick or treating. Our reason for creating GoodCandy is so parents are able to report houses which have people who could potentially be suspicious. We then realized later that kids could use GoodCandy to see which houses give out the best candy. 
+
+How we built it
+
+Challenges we ran into
+
+Two major challenges we ran into were setting up the databases and trying to get leafletJS to work. We got the databases working after a long time and we ended up having to leave our map implementation suing leafletJS because it was taking way too much of our time and we were barely making any progress. Additionally, one of us came into this project with no experience in web development so he had to learn Javascript, ReactJS, and all the other software we used. 
+
+Accomplishments that we're proud of
+
+Not much, we bit off way more than we could chew.
+
+What we learned
+
+What's next for GoodCandy
+
+We may improve it in the future, but since we are all usually pretty busy, it may be be awhile.
+","https://github.com/Rohan-Sagar1/Goodcandy-backend, http://hayes-f75de.web.app",,"Creative & User Experience - Northern Trust, Virtual Marketplace Candy Exchange - Geneva Trading, (MLH) Best Use of Auth0, (MLH) Most Creative Use of GitHub, Best Use of Microsoft Cloud for Your Community","github, auth0, firebase, mongodb, react, materialui, azure, figma",,Purdue University,2,Purdue University,"",""
+Candy Trading Place,https://demonhacks2022.devpost.com/submissions/367357-candy-trading-place,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:05:51,"Inspiration
+
+As we know, trick-or-treaters may not always get the candy they prefer. Whether it be for allergies or simply not liking candy corn, we understand what it can feel like! That is why we came up with a way to ensure everyone gets the candy they prefer!
+
+What it does
+
+Parents can create an account and show off their candy stash. They can trade candy with other parents to ensure their children get the sweets they love! Parents are notified of the nearest police station to ensure there is a safe transaction!
+
+How we built it
+
+MERN stack! React.js for the frontend! Express.js/Node.js for the backend. MongoDB for the database.
+
+Challenges we ran into
+
+Being time-constrained! New framework! Getting the backend to communicate with the frontend! The overall design and concept of the platform!
+
+Accomplishments that we're proud of
+
+Getting a site up that is visible! Getting a feature working! Team collaboration!
+
+What we learned
+
+React! Express.js! MongoDB! Auth0!
+
+What's next for Candy Trading Place
+
+Implementing the rest of the features that were planned such as automatic matching, preferences, filtering, visual map, location matching
+",https://github.com/tylxrrr/candytradingmarketplace,,"Creative & User Experience - Northern Trust, Virtual Marketplace Candy Exchange - Geneva Trading, (MLH) Best Use of Auth0, (MLH) Most Creative Use of GitHub","javascript, mongodb, express.js, node.js, auth0, react.js",,DePaul University,2,DePaul University,"",""
+Creep it Real,https://demonhacks2022.devpost.com/submissions/367358-creep-it-real,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:06:16,"Inspiration
+
+We were inspired by the clothing generator from the film ""Clueless"" as well as the Halloween prompt by Computer Science Society and we decided to combine the ideas into one.
+
+What it does
+
+The website will generate Halloween costume ideas based on user input. The user is prompted by a series of options which they selected and based on their selected options an output is generated.
+
+How we built it
+
+We used a combination of html, CSS, and JavaScript to create our website. 
+
+Challenges we ran into
+
+One challenge we ran into was creating a wide range of options with many nested loops and if conditions that caused the code from not generating any images. As a result, we decided to reduce our number of options yet still provide a comprehensive list of choices. 
+Adding an additional prompt under the adult costume section led to the code not generating any output, but we were able to solve it by inspecting the page and identifying the error which was the placement of the code.
+Due to breaks from the additional prompt in the adult costume section we also experienced unwanted spaces on the website between user selections, but because of time constraints we hope to fix the formatting in the future.
+Lastly, setting up the custom domain name proved to be a challenge however we all learned a new skill from the experience.
+
+Accomplishments that we're proud of
+
+
+Creation of an avatar loading bar that fills out a certain percentage when the user selects an option.
+Customizing the page with animation along with different fonts and styles to set the theme, which makes the user experience more enjoyable.
+Using CSS to make the images generated appropriate and uniform size.
+Use of MS paint to make a themed logo and header.
+Adding pngs of candy pieces in replacement of square buttons.
+
+
+What we learned
+
+We were able to improve our HTML, CSS and JavaScript skills further and also we got to experiment with different coding techniques. 
+We also gained team building, networking, and organization skills which include: managing time, delegating tasks, and converting ideas from paper to a functioning website.
+
+What's next for Creep it Real
+
+In the near future we hope to increase our user options like including a selection of genders, hair color and length, height and a random single and random group option.
+We would also like to add an avatar where users are able to view their generated costume on the mannequin. 
+Working towards a more aesthetically appealing interface would also be a goal of ours.
+",https://github.com/cruttencutter/demonhacks,,"Creative & User Experience - Northern Trust, (MLH) Best Domain Name from Domain.com, (MLH) Most Creative Use of GitHub","html, css, javascript, github, mspaint",,DePaul University,3,DePaul University,http://www.creepitreal.tech/,""
+Hello World,https://demonhacks2022.devpost.com/submissions/367359-hello-world,Submitted (Hidden),Pending,Submit,11/05/2022 16:09:22,"Inspiration
+
+What it does
+
+How we built it
+
+Challenges we ran into
+
+Accomplishments that we're proud of
+
+What we learned
+
+What's next for world
+","",,"Creative & User Experience - Northern Trust, Adversary PumpkinReaper - Crowdstrike, (MLH) Best Use of Auth0","friendship, good, vibe",,"Rutgers, The State University of New Jersey",0,Virginia Tech,"",""
+Candy Market,https://demonhacks2022.devpost.com/submissions/367360-candy-market,Submitted (Hidden),Pending,Submit,11/05/2022 16:09:35,"Inspiration
+
+TBD
+
+What it does
+
+How we built it
+
+Challenges we ran into
+
+Accomplishments that we're proud of
+
+What we learned
+
+What's next for Candy Market
+","",,"",tbd,,DePaul University,0,DePaul University,"",""
+Discover Loanliness,https://demonhacks2022.devpost.com/submissions/367361-discover-loanliness,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:09:38,"Inspiration
+
+We were looking for projects to work on in the financial sector that would match our skillset
+
+What it does
+
+How we built it
+
+Challenges we ran into
+
+Accomplishments that we're proud of
+
+What we learned
+
+What's next for Discover Loanliness
+",https://discoverloanliness.netlify.app/#/,,"Creative & User Experience - Northern Trust, Brighter Financial Future - Discover","react, firebase, google-cloud",,DePaul University,2,DePaul University,"",""
+Untitled,"",Draft,Pending,Manage team,11/05/2022 16:10:15,"","",,"","",,DePaul University,0,"","",""
+Untitled,"",Draft,Pending,Manage team,11/05/2022 16:14:13,"","",,"","",,DePaul University,0,"","",""
+Candy Coin,https://demonhacks2022.devpost.com/submissions/367367-candy-coin,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:22:01,"Inspiration
+
+With the lack of centralized locations or services for people to trade candy of all ages, a system where students can trade candy with others around the world safely is important to society.
+
+What it does
+
+Candy Coin is a market that organizes and exchanges candy with other users. It creates an incentive to keep the spirit of Halloween alive throughout the year as Trick or Treating will be much more popular as the trading market grows. For example, a sought after candy such as Hersheys', will be bought and sold much more because of its demand. A major feature of Candy Coin comes in its use of incentivizes such as schools where users are able to register themselves as teachers and reward their students with candy for exceptional behavior and performance in class.
+
+How we built it
+
+
+mysql for database
+the framework we used was node.js, 
+the backend management was postgres
+express was our middleware
+
+
+Challenges we ran into
+
+Some challenges that we ran into creating Candy Coin was the implementation of Auth0 and the website's inability to recognize the environment variables in regards to the domain we chose to host our web application. This hindered the progress as utilizing an authentication framework provided by Auth0 would have been vital to being able to store safe and secure information. Another challenge was using the SQL database to hash all the passwords stored, but not being able to store a larger sized hash due to limitations based on their server requirements. Debugging this was a nightmare, and prevented us from accessing and logging in with particular users that were created.
+
+Accomplishments that we're proud of
+
+A major accomplishment that we would love to share is how we were able to complete our FIRST major hackathon ever in our life utilizing various technologies and frameworks. In any other setting, it would be difficult to bring together the multitude of tools which were enhanced by the free trials and access via MLH. Another major accomplishment we had was deploying a web application using knowledge of CSS & HTML to create a polished interface for any user who access the page. A well-designed application demonstrates easier navigation and longer time spent on the application. Especially for ours, candy exchanging requires constant monitoring and trading.
+
+What we learned
+
+We learned how to use an authentication tool such as Auth0 to authenticate users using the python library with the flask framework. Before this, we had never heard of this particular framework, and using it here was exciting. To create a pleasing User Interface, we researched ways to develop a proof of concept using the Tkinter package. Like any python package, the documentation served helpful in learning on how to create a GUI in an efficient manner.
+
+What's next for Candy Coin?
+
+For the hackathon, we had multiple ideas that were not realized by the deadline which included a system for parents to reward their kids for chores, good behavior, etc. A more in-depth interpersonal system where users are able to connect with each other using a Friends database.
+","https://github.com/DemonHack2022/candycoin, https://depauledu-my.sharepoint.com/:p:/g/personal/aabubak2_depaul_edu/EazUHER8MJxNmLAkUiQGt_sB9jNZTO16oGS6YNJ4EEFTlA?e=BvCF1j",,"Creative & User Experience - Northern Trust, Adversary PumpkinReaper - Crowdstrike, Virtual Marketplace Candy Exchange - Geneva Trading, Brighter Financial Future - Discover, (MLH) Most Creative Use of GitHub","data, python, mysql, github, postgresql, auth0, heroku",,DePaul University,3,DePaul University,candycorn.tech,GitHub and Auth0 integration with Candy Coin login service
+Trade & Treat,https://demonhacks2022.devpost.com/submissions/367368-trade-treat,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:22:05,"Inspiration
+
+Problem statement from Geneva trading
+
+What it does
+
+Virtual marketplace allows kids to trade their candy in return for a specific candy. Kids would be able to post their candy and what would they like in return for it. It would also allow other kids to post their offers and use the DM option once the trade has been accepted to agree upon a date/location and time to meet.
+
+How we built it
+
+-Used ASP.NET to create different webpages for the marketplace as follows:
+1) Home page, 2) Profile pages, 3)Trade page
+
+-Used SQL to communicate front-end with the database. The database holds the data for all the information uploaded to the website, like login info, post info, trade info, and offer info.
+
+-SQL was also used to update data for real-time updates
+
+Challenges we ran into
+
+We bounced off multiple ideas and options to create this marketplace. What language would we use to create the website was one of the most challenging tasks. Other than that it was the first time the team to use SQL and Auth0.
+
+Accomplishments that we're proud of
+
+The website we visualized during our creative process was way prettier than we were able to accomplish, but the time provided and considering it was the first hackathon for all of us, we are proud of the working model we were able to achieve.
+-Working website with graphics and clickable buttons
+-Auth0 was set up to create a user login
+-SQL was used to create a local database
+
+What we learned
+
+While we faced a lot of challenges, all of them provided us with experience with using various languages. 
+-We built a backend using node js, but weren't able to completely build the front end using it
+-Interfacing auth0 with our ASP.NET website was very interesting to see (were not able to complete it)
+
+What's next for Trade & Treat project
+
+-Creating the marketplace using reactjs and nodejs for mode dynamic user experience
+-Using azure and auth0 to implement cloud database and user login
+","",,"Creative & User Experience - Northern Trust, Virtual Marketplace Candy Exchange - Geneva Trading, (MLH) Best Use of Auth0, Best Use of Microsoft Cloud for Your Community","sql, auth0, asp.net, css, c#, html5, bootstrap",,University of Toledo,3,University of Toledo,"",""
+Sw33tT00th,https://demonhacks2022.devpost.com/submissions/367369-sw33tt00th,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:22:12,"Inspiration
+
+We were inspired by the Geneva problem statement 
+
+What it does
+
+There will be more details on our ReadMe in our github, but essentially, the app creates basic users (1-20) with randomly generated lists of candy. Once that is done, you can either add your own custom candy list or have it randomly generated like the previous users. After this, you can decided whether or not you want to trade your candy with the basic users that were originally created. You can trade as many times as you would like. 
+
+How we built it
+
+All of the code is in java
+
+Challenges we ran into
+
+We tried to take our app and make a version of it in ReactJs, but as none of us had used it before, it turned out to be a challenge. In the end we weren't able to get a presentable version of it. 
+
+Accomplishments that we're proud of
+
+The fact that our app does work. 
+
+What we learned
+
+I have never heard of a hashmap before today
+
+What's next for Sw33tT00th
+
+Since we did not get the ReactJs part to work we would like to finish this project in our own time. 
+",https://github.com/KevinF917/Sw33tT00th,,Virtual Marketplace Candy Exchange - Geneva Trading,javascript,,DePaul University,2,DePaul,"","GitHub, VS Code, Python, Java, Javascript, CSS, SQL Database, HTML"
+Untitled,"",Draft,Pending,Manage team,11/05/2022 16:22:21,"","",,"","",,Illinois Institute of Technology,0,"","",""
+Halloween Auction House,"",Draft,Pending,Project overview,11/05/2022 16:22:33,"","",,"","",,University of Illinois at Chicago,1,"","",""
+Trade or Treat,https://demonhacks2022.devpost.com/submissions/367373-trade-or-treat,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:23:19,"Inspiration
+
+Before coming to DemonHacks, our team had set our sights on creating some sort of mobile application. When we heard this prompt we thought it was a perfect fit for us.
+
+What it does
+
+The user inputs what candy they have which is then stored in a NoSQL database.  Then the google-maps API is leveraged so that you can see people within a 5-mile radius and what candy those people have. The app automatically computes and suggests a safe exchange location (like a library).
+
+How we built it
+
+We created the app through React Native and stored user data using a NoSQL database. From that, we did the computations in python to figure out information such as safe locations to meet and who could trade with who.
+
+Challenges we ran into
+
+Originally, we had ALOT of Azure SQL database troubles but after a couple of hours we found out it was because of Depaul's firewall so we then had to switch to a NoSQL solution. On top of that connecting front/back-end proved to be a major challenge.
+
+Accomplishments that we're proud of
+
+Considering the only thing the team came in with is python knowledge, we are proud of learning to create an app, set up servers, and connecting the elements together.
+
+What we learned
+
+We all primarily learned NoSQL databases, app development, and learning how hard integration is...
+
+What's next for Trade or Treat
+
+The group wanted to create an app similar to this one so in the future we see ourselves gutting the Halloween aspect and then re-building the app to our needs.  
+",https://github.com/Toningbasher/CandyTrading/blob/main/README.md,,"Creative & User Experience - Northern Trust, Virtual Marketplace Candy Exchange - Geneva Trading, (MLH) Most Creative Use of GitHub","nosql, react-native, python, mongodb, google-maps, api",,University of Illinois at Chicago,2,University of Illinois at Chicago,"",""
+TradeOrTreat,https://demonhacks2022.devpost.com/submissions/367374-tradeortreat,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:23:28,"Inspiration
+
+We wanted to brainstorm ideas about how to improve upon existing bartering systems. We came up with the idea that in order to guarantee the safety of our users, which are mostly children, both the buyer and seller would have to use qr codes. This added layer would make sure that foul play is less likely to happen when people had to confirm their sales. 
+
+What it does
+
+The website allows users to trade candy amongst one another. Users can post offers for candy online. Other users are then able to accept those offers. Upon accepting the offer, a unique qrcode is generated. The two parties must then meet up and conduct the deal. After the candy has been properly exchanged, scanning the qrcode solidifies the deal online.
+
+How we built it
+
+We designated roles to each team member. This divide and conquer system enabled us to work at an efficient pace. We mostly based our work using JavaScript. We had a GitHub repository to share our work. We made great use of githubs branches and merging system to further out progress. This asynchronous style allowed for quick progress.
+
+Challenges we ran into
+
+We encountered some technology we were not used to working with. However, we all overcame the learning difficulties and as a result, we all learned something new. We also ran into a bunch of bugs along the way. Most of the bugs were dealt with after some time searching for answers or experimenting.
+
+Accomplishments that we're proud of
+
+We were very proud that we were able to create such a project in such little time. It really gave us perspective at what effective teamwork looked like. We all came out learning something new to add to our array of skills.
+
+What we learned
+
+We learned various technologies and APIs. We learned how to incorporate Auth0 and Azure into our work. However, it wasn't just technology based. We learned teamwork and communication skills. It furthered our teamwork abilities and cooperation.
+
+What's next for TradeOrTreat
+
+We would like to get optimized for mobile. Furthermore, in line with our principles for safety, we would like to add GPS tracking during offers to make sure our users are safe. We would also like to see our work thoroughly tested to ensure no security loops. We would not want our users' informations leaked or possibly at risk in any capacity.
+",https://github.com/MUmarJ/TradeOrTreat,,"Creative & User Experience - Northern Trust, Adversary PumpkinReaper - Crowdstrike, Virtual Marketplace Candy Exchange - Geneva Trading, Brighter Financial Future - Discover, (MLH) Best Use of Auth0, (MLH) Best Domain Name from Domain.com, (MLH) Most Creative Use of GitHub, Best Use of Microsoft Cloud for Your Community","javascript, mongodb, react, auth0, azure, twilio, google-cloud",,Illinois Institute of Technology,3,Illinois Institute of Technology,tradeortreat.tech,"Auth0 is great, Google Cloud is easy to set up and use, React.js is very cool for building interactive website, Microsoft Azure, Twilio for messaging service helps the process of creating our own messaging service much easier, GitHub for version control"
+MoneySaver,https://demonhacks2022.devpost.com/submissions/367375-moneysaver,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:23:37,"Inspiration
+
+We were inspired to make a ""financial calculator"" and ""debt saver"" after being inspired by one of our group members (who is an accounting major). We also heard that the ""finance"" challenges were not tackled as much as the other prompts, giving us an edge over the competition.
+
+What it does
+
+MoneySaver calculates how much your investment will be worth in the future, how long it will take to pay off your debt, and how much to invest now to get a specific sum of money later. It has options for simple interest (interest on principal), compound interest (interest on interest), ordinary annuity (payments at the end of each year), and annuity due (payments at the beginning of each year). 
+
+How we built it
+
+We originally used Python to figure out how to calculate each scenario. Then, we translated the formulas into JavaScript, and used CSS alongside HTML to build our website. Visual Studio allowed us to collaborate and handle both the front-end and back-end of our program. 
+
+Challenges we ran into
+
+Python makes formulas relatively simple, but JavaScript requires you to think out of the box. In Python, a line that references variables and puts something to the power of a number is straightforward; meanwhile, in JavaScript, you must play with nested loops and reorganize the entire formula to get it to work. It was very tedious. It's also one of the reasons we had a hard time incorporating annuities, mainly due to time constraints, despite having the formulas written down and translated into Python. 
+
+Accomplishments that we're proud of
+
+We were able to get our website up and running, despite missing some functionalities. This was great since 3/4 of our group members were relatively fresh to the software we used and had to watch several, long tutorials to learn how to contribute and push changes. 
+
+What we learned
+
+Before we settled on our final project, we attempted the candy exchange and did most of the work via JavaScript. From our experiences, we learned how to create functional buttons, amongst other object-oriented concepts. We also learned how to put pictures on our websites. As for the MoneySaver, we learned how to convert chunks of Python code (and formulas) into JavaScript.
+
+What's next for MoneySaver
+
+We plan to add more functionalities, such as the present value of annuities. We also want more specifications (beyond annual payments). Not to mention, we want to upload the program to a website. 
+",https://github.com/jjdubski/STEMStuds.git,,"Creative & User Experience - Northern Trust, Brighter Financial Future - Discover, (MLH) Most Creative Use of GitHub","python, css, html, javascript, visual-studio",,"DePaul University, Illinois Institute of Technology",3,"DePaul University, Illinois Institute of Technology, Moraine Valley College","",CSS helped handle both the front-end and back-end of our programming. It also allowed us to collaborate rather effectively. Highly recommended!
+Candy Market Place,https://demonhacks2022.devpost.com/submissions/367376-candy-market-place,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:24:10,"Inspiration
+
+Auction houses from online games
+
+What it does
+
+Lets users put a quantity of candy up to the market place and request a trade for candy and the amount they want. 
+
+How we built it
+
+Sql as backend and a gui using java
+
+Challenges we ran into
+
+Connecting sql and java with each other. 
+
+Accomplishments that we're proud of
+
+Connectivity of java and sql
+
+What we learned
+
+We learned how to connect java and the sql data base. 
+
+What's next for Candy Market Place
+
+Making a more complex database with triggers to allow for things like transaction ids and implement some of the java logic to the main database.
+",https://github.com/mattnice/hackathon,,Virtual Marketplace Candy Exchange - Geneva Trading,"sql, java",,DePaul University,2,DePaul University,"",""
+Sweetdeals®,https://demonhacks2022.devpost.com/submissions/367377-sweetdeals,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:24:10,"Inspiration
+
+We were looking at current popular social media applications and also online marketplaces while trying to design a mobile app where users can easily trade in their unwanted Halloween candies with others while ensuring a safe and worry-free process. 
+
+What it does
+
+Sweetdeal is a simple marketplace for trading Halloween candy. On our app users have a home page where they can scroll through listings made by other users. Clicking a listing opens a page where the user can request a trade for the candies they want and what candies they would give in return. Clicking the bell icon will bring up a pop message at the bottom of the screen notifying the user of a trade request. The user can accept or ignore this request. Lastly, the user profile page in the top right brings up a pop-up tab that displays the user the candy stash that they have to trade. The pop-up has two buttons one to go back to the previous screen and one that brings the user to another screen for modifying the total for each candy they have to trade.
+
+How we built it
+
+Our program was built within the Flutter framework using Dart and worked in between using a pair-programming application called Duckly. For quick application uses, we implemented Dartpad (a browser-based program previewer) and Github where we created our repository. We began with a team brainstorming, choosing what prompts interest us as well as matching our beginner skills. We later created shared drives, channels, and emails to collaborate and that is when we decided what framework to use and gave responsibilities to each team member. Afterward, we created a map interface on how the app will run under certain conditions, and that is when we started programming.
+
+Challenges we ran into
+
+This is our first time touching any of these technologies so everything was a challenge but also a great learning experience.  We ran into an issue getting Flutter to work on certain computers and to save time we used Dartpad which lets us code dart on the web and still see how the actual application will look. Another challenge we faced was trying to incorporate python into Flutter we spent hours trying to get this to work but ultimately decided it was better to spend the rest of our time polishing the product we have now. Getting the app to look how we wanted caused us many problems. Getting the images to act as buttons and getting the images themselves took us a lot of time to get working properly. Everything felt new to us but that is what made this challenge even more rewarding.
+
+Accomplishments that we're proud of
+
+All three of us are very proud of the way we got the app to look and feel and while it is a simple app we researched and learned a lot to get this working the way it is. 
+
+What we learned
+
+As entry-level programmers, our knowledge of Dart, React, Javascript, Flutter, and API networks was minimal. With a cybersecurity major, aerospace engineering major, and computer science major, we learned to effectively put our strengths to use in creating a mobile app. Every minute of not eating was implemented into the project. Two of us had no prior java experience at all, yet we were able to compile widgets and alter layouts of a mobile app UI. We learned how to structure the process of product creation when you have a motivated team to complete a project. There has to be a balance between the team, and chances where everyone can have their input. This project did just that, each member significantly contributed to the app, making it what it is. Each member learned every language, and software necessary for the app to run. And in doing so, we found each of our newfound strengths along the way. One realized he really like front UI development, the other realized how complicated API networks were. No matter the good and the bad, we made friends along the way.
+
+What's next for Sweetdeals®
+
+Sweetdeals was a fun project to work on and we are not planning to stop continuously making improvements. Some of our application and small functions could not all be finished within the 24 hours including sign-in functions and users information. We hope to deploy this app publicly through the Apple's Developer Kit / Servers where all trick-or-treaters can enjoy the enhanced experience of trading candies. Ideas such as setting up meet-ups within the proximity of the area and parental supervision is all features we hope to develop. Lastly as for the team of Sweetdeals, we all connected and made friends during this event and it seems that this will not be the last time we will work on something together again.
+",https://github.com/Dodhon/DemonHacks2022,https://www.youtube.com/watch?v=FT_2f0RwoIQ,"Creative & User Experience - Northern Trust, Virtual Marketplace Candy Exchange - Geneva Trading, (MLH) Most Creative Use of GitHub","dart, dartpad, flutter, github, pairprograming, duckly, adobe-illustrator",,"DePaul University, Illinois Institute of Technology",2,"DePaul University, Illinois Institute of Technology","",""
+Trick-Or-Trade-DemonHacks-2022,https://demonhacks2022.devpost.com/submissions/367379-trick-or-trade-demonhacks-2022,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:26:13,"Trick-Or-Trade-DemonHacks-2022
+
+Problem Statement 
+Develop programme that creates a virtual marketplace and falicitates a safe in person candy exchange
+
+Solution 
+We Built a candy exchange trading platform where users can trade candy based on candy which is categorised into caramel, fruity, almondy and other
+
+Challenges Faced 
+Challenges faced in this project are 
+1.Implementing the different modules 
+2.Risk Management which includes Storing and securing user Data, verification model, wasted time / failed transactions 
+
+How are we facing the challenges 
+All the team has collaborated and divided the project tasks and are using github as the primary platform to merge the modules 
+
+Technologies Used 
+1.Python 
+2.Github 
+
+Future Updates 
+1.Increasing the user Security by adding 
+2.2-step verification and Government Id check to verify if he is a real user and if it's a child has parental supervision 
+3.Value of candy based on market demand 
+4.Simplify UI and interactive experience 
+5.Rating system for users based on the legitamacy and review of their past transactions 
+",https://github.com/Iquoc/Trick-Or-Trade-DemonHacks-2022.git,https://youtu.be/dHTtAHbJ35I,Virtual Marketplace Candy Exchange - Geneva Trading,"python, github",,DePaul University,3,DePaul University,"",Our team has  utilized GitHub to merge all modules of code that we worked on
+Untitled,"",Draft,Pending,Manage team,11/05/2022 16:26:44,"","",,"","",,"",0,"","",""
+Virtual candy exchanger,https://demonhacks2022.devpost.com/submissions/367383-virtual-candy-exchanger,Submitted (Gallery/Visible),Pending,Submit,11/05/2022 16:31:54,"Inspirations
+
+Every Halloween, trick-or-treaters are tasked with sorting through their hard-earned loot. Many are ultimately disappointed with the assortment of candy they receive due to personal preferences. The product will reduce the risks impacting the demographic, enhances the user experience, and facilitates a safe in-person candy exchange.
+
+What it does
+
+The Virtual candy exchanger can be implemented with a machine and located in the public. The idea behind this product is that instead of making an appointment to exchange candy and sometimes we will get the candy that we don't like, we will exchange candy with this machine.  It will remember your preferences for candy and will notify you when your favorite candies are available via email.
+
+How we built it
+
+Built a web app that describes functions such as exchanging candy, viewing and adding user information, and sending emails.
+
+Challenges we ran into
+
+Limited time, learn about the face recognition model.
+
+Accomplishments that we're proud of
+
+I can finish all of the basic functions in 24 hours.
+
+What we learned
+
+I learned how to upload images to Azure, got acquainted with Flask, think quickly about how to solve the problem in a short time.
+
+What's next for Virtual candy exchanger
+
+Voice recognition instead of typing, chatbot, image stream
+Use this idea to create a virtual assistant
+","https://virtual-exchanger.herokuapp.com/, https://github.com/phhoang98a/demonhacks",https://www.youtube.com/watch?v=mD7uvo-7kWc,"Creative & User Experience - Northern Trust, Adversary PumpkinReaper - Crowdstrike, Virtual Marketplace Candy Exchange - Geneva Trading, (MLH) Best Use of Auth0, Best Use of Microsoft Cloud for Your Community","flask, react, azure, mongodb, python, javascript, heroku",,DePaul University,0,Depaul University,"",""
+Personalised Investment,"",Draft,Pending,Project overview,11/05/2022 16:48:40,"","",,"","",,"Panimalar Engineering College, Illinois Institute of Technology",1,"","",""
+CandyMarket,https://demonhacks2022.devpost.com/submissions/367605-candymarket,Submitted (Gallery/Visible),Pending,Submit,11/06/2022 00:56:04,"Inspiration
+
+We took inspiration from various marketplaces and combined it with Halloween theme.
+
+What it does
+
+CandyMarket is platform on which users can exchange their candies based on their personal preferences. At start, user can buy Candy Points which is used as a main currency on the market to buy and sell items. Moreover, the platform can show analyzed statistics of transactions to help users to control their budget.
+
+How we built it
+
+The frontend of the platform is implemented with ReactJS while the backend 
+
+Challenges we ran into
+
+During coding we run into several challenges. The biggest problems occurred during the implementation of database and trading systems.
+
+Accomplishments that we're proud of
+
+We really like the design that we come up with, and we proud of how easy to use is user interface.
+
+What we learned
+
+We were new to Supabase firbase on which we implemented our data base system.
+
+What's next for CandyMarket
+
+New features like dividing candies into categories, messaging system between the seller and buyer.
+",https://github.com/exortme1ster/HackathonNovember,,"Creative & User Experience - Northern Trust, Virtual Marketplace Candy Exchange - Geneva Trading, Brighter Financial Future - Discover, (MLH) Most Creative Use of GitHub","react, supabase, postgresql, figma",,University of Illinois at Chicago,1,University of Illiinois at Chicago,"",We were enjoying using ReacJS
+Expense Tracker,https://demonhacks2022.devpost.com/submissions/367663-expense-tracker,Submitted (Hidden),Pending,Submit,11/06/2022 02:22:51,"Inspiration
+
+Growing up in a country with diverse cultures, we observed that when it comes to making informed choices about money, there is another diverse pattern among diverse groups. Statistical analysis showed that these differences in financial planning basics correlate to differences in gender, qualification, location (rural, urban, or metro), employment, technology savvy, and current debt.
+
+In most Indian families, we are taught about the value and importance of saving money. Even an ING survey found that Indians ranked number 2 in 10 leading countries assessed on financial literacy levels. But going into the data it was found that this was linked to the basic Indian ethos to save and invest in real estate and gold.
+
+However, with changing lifestyles, more dependency on credit cards and access to a variety of personal loans as well as a heavy EMI burden are affecting the success of the financial plan of the salaried classes.
+
+When we moved out for college and started living alone, managing expenses, budgeting our lifestyle and student debts, and planning for studying abroad, all this was not an easy task.
+
+Thinking about the exact reason behind this problem, we realized that no one ever taught us about money matters. Whether it be schools or families, there is no curriculum or conversations on money management.
+
+With one of our teammates suffering hard since the wake of the pandemic, as her father lost his job, and she had to support her family and fund her education alongside, we felt we should do something about this issue.
+
+If her family would have been more informed and aware of financial backups, it would have been easier for him.
+
+Hence, we came up with the idea to build something to solve this issue.
+","https://github.com/Abhijit20112003/Expense-Tracker-master, https://expense-tracker-master.vercel.app/",,Creative & User Experience - Northern Trust,"react.js, css, html",,"Abhijit Roy, JUSCO SCHOOL KADMA, iter",2,Arka Jain University,"",""
+Teresa Bot 2.0,https://demonhacks2022.devpost.com/submissions/367873-teresa-bot-2-0,Submitted (Hidden),Pending,Submit,11/06/2022 08:35:54,"Inspiration
+
+Mother Teresa
+
+What it does
+
+Using C19 Predictor and computer aided black fungus we can predict it using Cnn and the bed availability of nearby hospitals can be found using the mobile application
+
+How I built it
+
+A mobile application will enable the hospital to update the count of bed availability (with oxygen and without oxygen ). This data will be stored in the Firebase real-time database. On another end, in the second module, the user will get his current location. The nearby hospitals will be indicated on their smartphones. When he views the indication he can receive the real-time data of the respective hospital.
+
+Challenges I ran into
+
+Collection of datasets for black fungus due to recent occurence.
+
+Accomplishments that I'm proud of
+
+We are able to assist nurse and take care of the patient during this pandemic situation
+
+What I learned
+
+We learnt that with ML algorithms we can get more efficiency for the detection.
+
+What's next for Teresa Bot 2.0
+
+customize it and make available around each and every hospital
+",https://github.com/swathi-469/Teresa-Bot-2.0,https://youtu.be/eOnEd4_1yjU,"(MLH) Most Creative Use of GitHub, Best Use of Microsoft Cloud for Your Community","bot, machine-learning, ai, flask, gprs, mobile-application, ros, mapping, google-cloud",,"Sri Sairam Matriculation higher secondary school , Sri Sairam Engineering College",1,Sri Sairam Engineering College,"",""
+The Candy Exchange,https://demonhacks2022.devpost.com/submissions/368177-the-candy-exchange,Submitted (Gallery/Visible),Pending,Submit,11/06/2022 11:57:53,"Inspiration - I am extremely interested in cryptocurrencies and always wanted to utilize the volatile markets to price other markets.
+
+What it does - It shows you the current price for a candy which is representative of a cryptocurrency.
+
+How I built it - I first began on the front end with html. Then, I began decorating it with css. Then, I introduced more complexity by utilizing jQuery to read current cryptocurrency prices and display it.
+
+Challenges I ran into - My mistake was starting on the frontend instead of the backend.
+
+Accomplishments that we're proud of - I am happy that I was able to develop a somewhat 'organized' website with minimal css and html experience. Also, I am proud of the contact section which sends over information to my google spreadsheets.
+
+What we learned - I have learned how to 'create' a DNS. Also, I learned  how to publish work on Github.
+
+What's next for The Candy Exchange - Starting the backend by developing an account that can purchase and sell candies.
+",https://www.thecandyexchange.tech/,,"","html, css, javascript, github, dns",,DePaul University,0,DePaul University,www.thecandyexchange.tech,""

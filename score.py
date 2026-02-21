@@ -52,15 +52,6 @@ def getPodScoreForProject(judge_rows, pod_number, project_number):
             pod_score += jr.score
             count += 1
 
-    # print("Pod: ", pod_number)
-    # print("Project: ", project_number)
-    # print("Pod Score: ", pod_score)
-    # print("Rows Contributed:", count)
-    # print("+++++++++++++++++++++++++")
-    # print()
-
-
-
 
 JudgeRow = namedtuple("JudgeRow", ["judge", "pod", "project", "score"])
 
@@ -115,11 +106,11 @@ for pod, projects in pod_project_totals.items():
 
 
 # print it
-# for pod, items in pod_scores_by_pod.items():
-#     # print("Pod:", pod)
-#     for project, score, count in items:
-#         print(f"  Project: {project}  Pod Score: {score}")
-#     print()
+for pod, items in pod_scores_by_pod.items():
+    print("Pod:", pod)
+    for project, score, count in items:
+        print(f"  Project: {project}  Pod Score: {score}")
+    print()
 
 
 
@@ -134,82 +125,62 @@ pod_list = [f"pod_{i+1}" for i in range(num_pods)]
 pj_list = list(range(1,project_count+1))
 required_review_count = 3
 
-def distribute_projects(project_list):
-    n = len(project_list) # number of projects
-    p = len(pod_list) #total pod count
-    r = required_review_count # reviews per pod
-    l =  calculate_num_projects_per_pod(n,r,p)
-
-    workload = (n * r) / p
-    shift = math.ceil(l / r)
-
-    begin = 0
-    end = l
-
-    assignments = {}
-
-
-    for i in range(0, len(pod_list)):
-        assigned_projects = []
-
-        if end > len(project_list):
-            part_one = project_list[begin:end]
-            remainder = l - len(part_one)
-            part_two = project_list[0: remainder]
-            combined = part_two + part_one
-            assigned_projects = combined
-        else:
-            assigned_projects = project_list[begin:end]
-        # print(f"pod {pod_list[i]}: {assigned_projects}, count: {len(assigned_projects)}")
-        assignments[pod_list[i]] = assigned_projects
-
-        begin = begin+shift
-        end = end+shift
-
-    return assignments
-
-
-
-
-def sanitize_project_assignments(assigned, project_list, r):
-    review_counts = {project: 0 for project in project_list}
-
-    for assigned_project in assigned:
-        assigned_project_list = assigned[assigned_project]
-        for project in assigned_project_list[:]:
-            if review_counts[project] < r:
-                review_counts[project] += 1
-            else:
-                assigned_project_list.remove(project)
-
-
-
-
-# assigned = distribute_projects(pj_list)
-
-# for project in assigned:
-#     print(f"{project} : {assigned[project]}")
-
-# sanitize_project_assignments(assigned, pj_list, required_review_count)
-
-# print("SANITIZED")
+# def distribute_projects(project_list):
+#     n = len(project_list) # number of projects
+#     p = len(pod_list) #total pod count
+#     r = required_review_count # reviews per pod
+#     l =  calculate_num_projects_per_pod(n,r,p)
 #
-# for project in assigned:
-#     print(f"{project} : {assigned[project]}")
-
-
-
-
-# initialize empty dictionary with each pod mapping to an empty list
-# set pod_index to 0
+#     workload = (n * r) / p
+#     shift = math.ceil(l / r)
 #
-# for each project in project list:
-#     for each step in range of required review count:
-#         calculate current pod using (pod_index + step) mod number of pods
-#         add project to that pod's list
-#     increment pod_index by 1
+#     begin = 0
+#     end = l
 #
-# return dictionary
+#     assignments = {}
+#
+#
+#     for i in range(0, len(pod_list)):
+#         assigned_projects = []
+#
+#         if end > len(project_list):
+#             part_one = project_list[begin:end]
+#             remainder = l - len(part_one)
+#             part_two = project_list[0: remainder]
+#             combined = part_two + part_one
+#             assigned_projects = combined
+#         else:
+#             assigned_projects = project_list[begin:end]
+#         # print(f"pod {pod_list[i]}: {assigned_projects}, count: {len(assigned_projects)}")
+#         assignments[pod_list[i]] = assigned_projects
+#
+#         begin = begin+shift
+#         end = end+shift
+#
+#     return assignments
+
+
+
+
+# def sanitize_project_assignments(assigned, project_list, r):
+#     review_counts = {project: 0 for project in project_list}
+#
+#     for assigned_project in assigned:
+#         assigned_project_list = assigned[assigned_project]
+#         for project in assigned_project_list[:]:
+#             if review_counts[project] < r:
+#                 review_counts[project] += 1
+#             else:
+#                 assigned_project_list.remove(project)
+
+
+
+
+
+
+
+
+
 
 
 
@@ -235,6 +206,7 @@ for project in assigned:
 print("TEST ALT END")
 
 
+#Validate unique distribution
 unique_subsets = len(set(frozenset(projects) for projects in assigned.values()))
 if unique_subsets == len(assigned):
     print("VALID: No two pods have the same project subset")
@@ -242,11 +214,7 @@ else:
     print(f"INVALID: Only {unique_subsets} unique subsets found across {len(assigned)} pods")
 
 
-# Sure:
-#
-# distribute_projects — given a project list, pod list, and required review count, assign each project to exactly r consecutive pods using a rotating index, returning a dictionary of pod to project list
-# validate_distribution — given the distribution dictionary, verify that every project appears exactly r times and no two pods have identical subsets, returning any violations found
-# sanitize_project_assignments — can likely be removed entirely since the new distribution method guarantees correctness by construction
+
 
 
 

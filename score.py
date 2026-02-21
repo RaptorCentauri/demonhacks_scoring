@@ -1,3 +1,5 @@
+import math
+
 import pandas as pd
 from collections import namedtuple
 
@@ -119,6 +121,53 @@ for pod, items in pod_scores_by_pod.items():
     print()
 
 
+
+
+
+def calculate_num_projects_per_pod(n,r, p):
+    return math.ceil((n * r) / p)
+
+
+pod_list = ["A", "B", "C", "D", "E", "F"]
+pj_list = list(range(1,60+1))
+
+def distribute_projects(project_list):
+    n = len(project_list) # number of projects
+    p = len(pod_list) #total pod count
+    r = 3 # reviews per pod
+    l =  calculate_num_projects_per_pod(n,r,p)
+    print("L= ", l)
+
+    workload = (n * r) / p
+    shift = math.ceil(l / r)
+
+
+
+    begin = 0
+    end = l
+
+    print("Shift", shift)
+
+    for i in range(0, len(pod_list)):
+        if end > len(project_list):
+            part_one = project_list[begin:end]
+            remainder = l - len(part_one)
+            part_two = project_list[0: remainder]
+            combined = part_two + part_one
+            print(f"pod {pod_list[i]}: {combined}, count: {len(combined)}")
+        else:
+            print(f"pod {pod_list[i]}: {project_list[begin:end]}, count: {len(project_list[begin:end])}")
+        begin = begin+shift
+        end = end+shift
+
+
+
+        #handle wrap around
+
+
+
+
+distribute_projects(pj_list)
 
 
 

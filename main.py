@@ -1,9 +1,6 @@
 from SubmissionManager import SubmissionManager
 from JudgingPodManager import JudgingPoddManager
 
-
-
-
 submission_manager = SubmissionManager("submissions.csv")
 submission_manager.validate()
 

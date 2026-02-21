@@ -1,6 +1,6 @@
 class JudgingPod:
-    def __init__(self, _pod_number):
-        self.pod_number = _pod_number
+    def __init__(self, _pod_name):
+        self.pod_name = _pod_name
         self.assigned_project_list = []
 
 
@@ -12,4 +12,3 @@ class JudgingPod:
         return self.assigned_project_list
 
 
-    

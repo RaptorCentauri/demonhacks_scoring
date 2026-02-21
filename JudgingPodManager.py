@@ -6,9 +6,8 @@ class JudgingPoddManager:
 
 
 
-
     def set_required_review_count(self, _review_count):
-        self.required_review_count = _review_count
+        self.required_review_counts = _review_count
 
 
 
@@ -52,10 +51,3 @@ class JudgingPoddManager:
             print(f"INVALID: Only {unique_subsets} unique subsets found across {len(self.judging_assignments)} pods")
 
 
-
-# #Validate unique distribution
-# unique_subsets = len(set(frozenset(projects) for projects in assigned.values()))
-# if unique_subsets == len(assigned):
-#     print("VALID: No two pods have the same project subset")
-# else:
-#     print(f"INVALID: Only {unique_subsets} unique subsets found across {len(assigned)} pods")

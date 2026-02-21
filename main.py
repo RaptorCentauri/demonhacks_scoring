@@ -6,7 +6,6 @@ submission_manager.validate()
 
 valid_submissions = submission_manager.get_valid_submissions()
 
-print(len(valid_submissions))
 
 
 judging_pod_manager = JudgingPoddManager(8,3)

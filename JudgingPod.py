@@ -20,4 +20,5 @@ class JudgingPod:
     def get_project_count(self):
         return len(self.assigned_project_list)
 
-    def assign_pod(self, _assigned_project_list):
+    def assign_project_to_pod(self, project):
+        self.assigned_project_list.append(project)

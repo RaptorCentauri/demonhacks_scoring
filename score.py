@@ -128,8 +128,9 @@ for pod, projects in pod_project_totals.items():
 def calculate_num_projects_per_pod(n,r, p):
     return math.ceil((n * r) / p)
 
-project_count = 57
-pod_list = ["A", "B", "C", "D", "E", "F"]
+project_count = 37
+num_pods = 7
+pod_list = [f"pod_{i+1}" for i in range(num_pods)]
 pj_list = list(range(1,project_count+1))
 required_review_count = 3
 
@@ -184,29 +185,71 @@ def sanitize_project_assignments(assigned, project_list, r):
 
 
 
-assigned = distribute_projects(pj_list)
+# assigned = distribute_projects(pj_list)
 
+# for project in assigned:
+#     print(f"{project} : {assigned[project]}")
+
+# sanitize_project_assignments(assigned, pj_list, required_review_count)
+
+# print("SANITIZED")
+#
+# for project in assigned:
+#     print(f"{project} : {assigned[project]}")
+
+
+
+
+# initialize empty dictionary with each pod mapping to an empty list
+# set pod_index to 0
+#
+# for each project in project list:
+#     for each step in range of required review count:
+#         calculate current pod using (pod_index + step) mod number of pods
+#         add project to that pod's list
+#     increment pod_index by 1
+#
+# return dictionary
+
+
+
+def distribute_projects_alt(project_list, pods_list, review_count):
+    assignments = {p: [] for p in pods_list}
+    pod_index = 0
+
+    for project in project_list:
+        for step in range(review_count):
+            current_pod = pods_list[(pod_index + step) % len(pods_list)]
+            assignments[current_pod].append(project)
+
+        pod_index += 1
+    return assignments
+
+
+
+assigned = distribute_projects_alt(pj_list,pod_list, required_review_count)
+
+print("TEST ALT BEGIN")
 for project in assigned:
     print(f"{project} : {assigned[project]}")
-
-sanitize_project_assignments(assigned, pj_list, required_review_count)
-
-print("SANITIZED")
-
-for project in assigned:
-    print(f"{project} : {assigned[project]}")
+print("TEST ALT END")
 
 
+unique_subsets = len(set(frozenset(projects) for projects in assigned.values()))
+if unique_subsets == len(assigned):
+    print("VALID: No two pods have the same project subset")
+else:
+    print(f"INVALID: Only {unique_subsets} unique subsets found across {len(assigned)} pods")
 
 
-
-
-
-
-
-
+# Sure:
+#
+# distribute_projects — given a project list, pod list, and required review count, assign each project to exactly r consecutive pods using a rotating index, returning a dictionary of pod to project list
+# validate_distribution — given the distribution dictionary, verify that every project appears exactly r times and no two pods have identical subsets, returning any violations found
+# sanitize_project_assignments — can likely be removed entirely since the new distribution method guarantees correctness by construction
 
 
 
 
 
+# The number of pods must be greater than the required review count.

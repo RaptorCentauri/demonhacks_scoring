@@ -22,3 +22,5 @@ class JudgingPod:
 
     def assign_project_to_pod(self, project):
         self.assigned_project_list.append(project)
+
+

@@ -15,10 +15,10 @@ judging_pod_manager = JudgingPoddManager(8,3)
 
 assigner = Assigner(submission_manager, judging_pod_manager)
 
-# assigner.distribute_projects_to_pods()
 assigner.assign()
 
 assigner.validate_distribution()
+
 
 
 

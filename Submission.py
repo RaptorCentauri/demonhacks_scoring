@@ -6,8 +6,8 @@ class Submission:
         self.assigned_pods = []
 
     def __repr__(self):
-        # return f'(id: {self.id}, name: {self.name}, url: {self.url}), assigned_pods: {self.assigned_pods}'
-        return "A"
+        return f'(id: {self.id}, name: {self.name}, url: {self.url}), assigned_pods: {self.assigned_pods}'
+
 
     def __str__(self):
         return f'(id: {self.id}, name: {self.name}, url: {self.url})'

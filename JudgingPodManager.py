@@ -4,7 +4,6 @@ class JudgingPoddManager:
     def __init__(self, _num_pods, _required_review_count):
         self.pod_list = []
         self.required_review_counts = _required_review_count
-        self.judging_assignments = {}
         self.num_pods = _num_pods
 
         self.initialize_pods()
@@ -36,7 +35,7 @@ class JudgingPoddManager:
             print(f"{pod.get_pod_name()} : {pod.get_assigned_project_list()}")
 
     def get_submission_count_per_judging_pod(self):
-        for pod in self.judging_assignments:
+        for pod in self.pod_list:
             print(f"{pod.get_pod_name()} : {pod.get_project_count()}")
 
     def set_submissions_for_pod(self, pod_number, submission_ids):

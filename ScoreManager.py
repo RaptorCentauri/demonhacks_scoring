@@ -48,9 +48,6 @@ class ScoreManager:
 
 
     def get_scores(self):
-
-
-
         for index, row in self.raw_scores.iterrows():
             judge = row["Judge Name"]
             pod_num = row["Pod Number"]

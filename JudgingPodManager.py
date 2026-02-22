@@ -15,20 +15,18 @@ class JudgingPoddManager:
             self.pod_list.append(pod)
 
 
+    def get_pod_list(self):
+        return self.pod_list
+
 
     def set_required_review_count(self, _review_count):
         self.required_review_counts = _review_count
 
+    def get_required_review_count(self):
+        return self.required_review_counts
 
-    def distribute_projects_to_pods(self, project_list):
-        pod_index = 0
-
-        for project in project_list:
-            for step in range(self.required_review_counts):
-                current_pod = self.pod_list[(pod_index + step) % len(self.pod_list)]
-                current_pod.assign_project_to_pod(project)
-            pod_index += 1
-
+    def get_pod_numbers(self):
+        return [pod.get_pod_number() for pod in self.pod_list]
 
     def get_judging_assignments(self):
         return self.judging_assignments
@@ -41,11 +39,12 @@ class JudgingPoddManager:
         for pod in self.judging_assignments:
             print(f"{pod.get_pod_name()} : {pod.get_project_count()}")
 
+    def set_submissions_for_pod(self, pod_number, submission_ids):
+        for pod in self.pod_list:
+            if pod.get_pod_number() == pod_number:
+                for submission_id in submission_ids:
+                    pod.assign_project_to_pod(submission_id)
+                break
 
-    def validate_submission_distribution(self):
-        #Validate unique distribution
-        unique_subsets = len(set(frozenset(projects) for projects in self.judging_assignments.values()))
-        if unique_subsets == len(self.judging_assignments):
-            print("VALID: No two pods have the same project subset")
-        else:
-            print(f"INVALID: Only {unique_subsets} unique subsets found across {len(self.judging_assignments)} pods")
+    def get_submissions_for_pod(self, pod_number):
+            return self.pod_list[pod_number].get_assigned_project_list()

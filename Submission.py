@@ -6,10 +6,11 @@ class Submission:
         self.assigned_pods = []
 
     def __repr__(self):
-        return f'(id: {self.id}, name: {self.name}, url: {self.url})'
+        # return f'(id: {self.id}, name: {self.name}, url: {self.url}), assigned_pods: {self.assigned_pods}'
+        return "A"
 
     def __str__(self):
-        return "Submission String!!"
+        return f'(id: {self.id}, name: {self.name}, url: {self.url})'
 
     def get_assigned_pods(self):
         return self.assigned_pods
@@ -22,3 +23,6 @@ class Submission:
 
     def get_url(self):
         return self.url
+
+    def assign_pod(self, pod):
+        self.assigned_pods.append(pod)

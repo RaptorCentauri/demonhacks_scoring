@@ -1,28 +1,41 @@
-
-from CSVManager import CSVManager
 from Submission import Submission
 
-SUBMISSION_COLUMNS = ["Project Title", "Submission Url", "Highest Step Completed"]  # update as needed
-
 class SubmissionManager:
-    def __init__(self, _filename):
-        self.raw_submissions = CSVManager.extract_data(_filename, SUBMISSION_COLUMNS)
+    def __init__(self, _raw_data):
+        self.raw_submissions = _raw_data
         self.valid_submissions = []
         self.real_submissions = []
 
-    def get_raw_submissions(self):
-        return self.raw_submissions
+        self.filter_valid_submissions()
+        self.populate_real_submissions()
 
-    def validate(self):
+    def filter_valid_submissions(self):
         for index, row in self.raw_submissions.iterrows():
             if row["Highest Step Completed"] == "Submit":
-                submission_tuple = (row["Project Title"], row["Submission Url"])
-                self.valid_submissions.append(submission_tuple)
-                submission = Submission(index, row["Project Title"], row["Submission Url"] )
-                self.real_submissions.append(submission)
+                self.valid_submissions.append(row)
+
+    def populate_real_submissions(self):
+        for index, row  in enumerate(self.valid_submissions):
+            submission = Submission(index, row["Project Title"], row["Submission Url"])
+            self.real_submissions.append(submission)
+
+    def get_raw_submissions(self):
+        return self.raw_submissions
 
     def get_valid_submissions(self):
         return self.valid_submissions
 
     def get_real_submissions(self):
         return self.real_submissions
+
+
+    def get_submission(self, submission_id):
+        return self.real_submissions[submission_id]
+
+
+    def set_pods_for_submission(self, submission_id, pod_numbers):
+        for submission in self.real_submissions:
+            if submission.get_id() == submission_id:
+                for pod_number in pod_numbers:
+                    submission.assign_pod(pod_number)
+                break

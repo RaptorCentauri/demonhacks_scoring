@@ -4,6 +4,13 @@ class JudgingPod:
         self.assigned_project_list = []
         self.pod_name = f"Pod-{_pod_number}"
 
+
+    def __str__(self):
+        return f'{self.pod_name} - {self.assigned_project_list}'
+
+    def __repr__(self):
+        return f'{self.pod_name} - {self.assigned_project_list}'
+
     def set_assigned_project_list(self, _assigned_project_list):
         self.assigned_project_list = _assigned_project_list
 

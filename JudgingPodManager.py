@@ -27,8 +27,6 @@ class JudgingPoddManager:
     def get_pod_numbers(self):
         return [pod.get_pod_number() for pod in self.pod_list]
 
-    def get_judging_assignments(self):
-        return self.judging_assignments
 
     def print_judging_assignments(self):
         for pod in self.pod_list:

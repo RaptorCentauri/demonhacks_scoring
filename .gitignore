@@ -1,5 +1,5 @@
-output
-test_data
-venv
-__pycache__
-.idea
+output/
+test_data/
+venv/
+__pycache__/
+.idea/

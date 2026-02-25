@@ -1,5 +1,4 @@
 output/
-test_data/
 venv/
 __pycache__/
 .idea/

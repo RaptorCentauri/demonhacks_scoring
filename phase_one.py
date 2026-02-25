@@ -2,6 +2,7 @@ from Assigner import Assigner
 from SubmissionManager import SubmissionManager
 from JudgingPodManager import JudgingPodManager
 from CSVManager import CSVManager
+from config import SUBMISSION_COLUMNS, CUSTOM_COLUMNS, METADATA_COLUMNS
 import os
 from datetime import datetime
 
@@ -37,22 +38,10 @@ def write_master_file(folder, assigner, num_pods):
             f.write("\n")
 
 def execute(args):
-    # for custom quesrions on devpost
-    domain = "List All Of The Domain Names Your Team Has Registered With Domain.Com During This Hackathon."
-    schools = "List All Of The Universities Or Schools  That Your Team Members Currently Attend."
-    feedback = "Share Feedback About Any Of The Technology You Interacted With At This Hackathon. Make Sure You Mention What Tech You're Reviewing (E.G. Git Hub, De So, Etc.)."
-
-
-    CUSTOM_COLUMNS = [domain, schools, feedback]
-    # CUSTOM_COLUMNS = [schools]
-
-
-    SUBMISSION_COLUMNS = ["Project Title", "Submission Url", "Table Number", "Highest Step Completed"] + CUSTOM_COLUMNS  # update as needed
-
 
     submission_data = CSVManager.extract_data(args.submissions, SUBMISSION_COLUMNS)
 
-    submission_manager = SubmissionManager(submission_data, CUSTOM_COLUMNS)
+    submission_manager = SubmissionManager(submission_data, CUSTOM_COLUMNS, METADATA_COLUMNS)
 
     judging_pod_manager = JudgingPodManager(args.pods, args.reviews)
 

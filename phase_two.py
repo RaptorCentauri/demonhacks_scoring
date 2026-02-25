@@ -34,6 +34,8 @@ def execute(args):
 
     submission_manager = SubmissionManager(submission_data)
 
+
+
     SCORE_COLUMNS = [
     "Judge Name",
     "Pod Number",
@@ -50,9 +52,29 @@ def execute(args):
     "Usefulness"
     ]
 
+    METADATA_COLUMNS = [
+    "Judge Name",
+    "Pod Number",
+    "Project Name",
+    "Project Number",
+    ]
+
+    CRITERIA_COLUMNS = [
+    "Creativity",
+    "Technical complexity",
+    "Code readability",
+    "Uniqueness of problem identified",
+    "Uniqueness of solution",
+    "Closeness of solution to problem",
+    "Polish and Presentation",
+    "Documentation/Readme",
+    "Usefulness"
+    ]
+
+
     score_data = CSVManager.extract_data(args.scores, SCORE_COLUMNS)
 
-    score_manager = ScoreManager(score_data, args.pods, args.threshold )
+    score_manager = ScoreManager(score_data, args.pods, args.threshold, CRITERIA_COLUMNS )
     top_five = score_manager.get_top_five()
 
     folder = create_output_folder()

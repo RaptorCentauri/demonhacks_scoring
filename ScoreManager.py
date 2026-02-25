@@ -3,13 +3,14 @@ from PodScore import PodScore
 JudgeRow = namedtuple("JudgeRow", ["judge", "pod", "project", "score"])
 
 class ScoreManager:
-    def __init__(self, _raw_scores, _num_pods, _threshold):
+    def __init__(self, _raw_scores, _num_pods, _threshold, _criteria_data):
         self.top_five = []
         self.raw_scores = _raw_scores
         self.judge_rows = []
         self.pod_scores = {}
         self.top_scores = []
         self.threshold = _threshold
+        self.criteria_data = _criteria_data
 
         self.create_PodScores(_num_pods)
         self.collect_judge_totals()
@@ -23,21 +24,7 @@ class ScoreManager:
         return self.raw_scores
 
     def calculate_judge_total(self, row):
-        creativity_score = row["Creativity"]
-        complexity = row["Technical complexity"]
-        readability_score = row["Code readability"]
-        problem_score = row["Uniqueness of problem identified"]
-        solution_score = row["Uniqueness of solution"]
-        closeness_score = row["Closeness of solution to problem"]
-        polish_score = row["Polish and Presentation"]
-        documentation_score = row["Documentation/Readme"]
-        usefulness_score = row["Usefulness"]
-
-        raw_scores = [creativity_score, complexity, readability_score, problem_score, solution_score, closeness_score,
-                      polish_score, documentation_score, usefulness_score]
-
-        return sum(raw_scores)
-
+        return sum(row[col] for col in self.criteria_data)
 
     def collect_judge_totals(self):
         for index, row in self.raw_scores.iterrows():

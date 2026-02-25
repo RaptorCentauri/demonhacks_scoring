@@ -1,22 +1,24 @@
 from Submission import Submission
 
 class SubmissionManager:
-    def __init__(self, _raw_data):
+    def __init__(self, _raw_data,_custom_columns=[]):
         self.raw_submissions = _raw_data
         self.valid_submissions = []
         self.real_submissions = []
 
         self.filter_valid_submissions()
-        self.populate_real_submissions()
+        self.populate_real_submissions(_custom_columns)
 
     def filter_valid_submissions(self):
         for index, row in self.raw_submissions.iterrows():
             if row["Highest Step Completed"] == "Submit":
                 self.valid_submissions.append(row)
 
-    def populate_real_submissions(self):
+    def populate_real_submissions(self, custom_columns=[]):
         for index, row in enumerate(self.valid_submissions):
-            submission = Submission(int(row["Table Number"]), row["Project Title"], row["Submission Url"])
+            custom_fields = {col: row[col] for col in custom_columns}
+            submission = Submission(int(row["Table Number"]), row["Project Title"], row["Submission Url"], custom_fields)
+            self.real_submissions.append(submission)
             self.real_submissions.append(submission)
 
     def get_raw_submissions(self):

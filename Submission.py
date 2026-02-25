@@ -1,8 +1,9 @@
 class Submission:
-    def __init__(self, _id, _name, _url):
+    def __init__(self, _id, _name, _url, _custom_fields={}):
         self.id = _id
         self.name = _name
         self.url = _url
+        self.custom_fields = _custom_fields
         self.assigned_pods = []
 
     def __repr__(self):
@@ -26,3 +27,6 @@ class Submission:
 
     def assign_pod(self, pod):
         self.assigned_pods.append(pod)
+
+    def get_custom_fields(self):
+        return self.custom_fields

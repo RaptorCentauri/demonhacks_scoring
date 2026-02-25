@@ -11,6 +11,14 @@ def create_output_folder():
     os.makedirs(folder, exist_ok=True)
     return folder
 
+# def write_pod_file(folder, pod_number, submissions):
+#     filename = os.path.join(folder, f"pod_{pod_number}.txt")
+#     with open(filename, "w") as f:
+#         f.write(f"Submissions for Pod {pod_number}\n")
+#         f.write("=====================\n")
+#         for submission in submissions:
+#             f.write(f"{submission}\n")
+
 def write_pod_file(folder, pod_number, submissions):
     filename = os.path.join(folder, f"pod_{pod_number}.txt")
     with open(filename, "w") as f:
@@ -18,6 +26,9 @@ def write_pod_file(folder, pod_number, submissions):
         f.write("=====================\n")
         for submission in submissions:
             f.write(f"{submission}\n")
+            for key, value in submission.get_custom_fields().items():
+                f.write(f"  {key}: {value}\n")
+            f.write("\n")
 
 def write_master_file(folder, assigner, num_pods):
     filename = os.path.join(folder, "pod_all.txt")
@@ -30,10 +41,17 @@ def write_master_file(folder, assigner, num_pods):
             f.write("\n")
 
 def execute(args):
-    SUBMISSION_COLUMNS = ["Project Title", "Submission Url", "Table Number", "Highest Step Completed"]  # update as needed
+    # for custom quesrions on devpost
+    domain = "List All Of The Domain Names Your Team Has Registered With Domain.Com During This Hackathon."
+
+    CUSTOM_COLUMNS = [domain]
+
+    SUBMISSION_COLUMNS = ["Project Title", "Submission Url", "Table Number", "Highest Step Completed"] + CUSTOM_COLUMNS  # update as needed
+
+
     submission_data = CSVManager.extract_data(args.submissions, SUBMISSION_COLUMNS)
 
-    submission_manager = SubmissionManager(submission_data)
+    submission_manager = SubmissionManager(submission_data, CUSTOM_COLUMNS)
 
     judging_pod_manager = JudgingPodManager(args.pods, args.reviews)
 
@@ -51,11 +69,7 @@ def execute(args):
     print(f"Pod Assignments saved to {folder}")
 
 
-    # for i in range(args.pods):
-    #     print(f"Submissions for Pod {i}")
-    #     print('=====================')
-    #     assigner.print_full_submissions_for_pod(i)
-    #     print()
+
 
 
 

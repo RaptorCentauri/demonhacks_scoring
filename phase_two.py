@@ -2,7 +2,7 @@
 from ScoreManager import ScoreManager
 from CSVManager import CSVManager
 from SubmissionManager import SubmissionManager
-from config import SCORE_COLUMNS, CRITERIA_COLUMNS
+from config import SCORE_COLUMNS, CRITERIA_COLUMNS, METADATA_COLUMNS
 import os
 from datetime import datetime
 
@@ -27,7 +27,6 @@ def write_top_five_file(folder, top_five, submission_manager):
             f.write("\n")
 
 
-
 def execute(args):
     SUBMISSION_COLUMNS = ["Project Title", "Submission Url", "Table Number",
                           "Highest Step Completed"]  # update as needed
@@ -38,7 +37,7 @@ def execute(args):
 
     score_data = CSVManager.extract_data(args.scores, SCORE_COLUMNS)
 
-    score_manager = ScoreManager(score_data, args.pods, args.threshold, CRITERIA_COLUMNS )
+    score_manager = ScoreManager(score_data, args.pods, args.threshold, CRITERIA_COLUMNS, METADATA_COLUMNS )
     top_five = score_manager.get_top_five()
 
     folder = create_output_folder()

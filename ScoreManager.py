@@ -3,7 +3,7 @@ from PodScore import PodScore
 JudgeRow = namedtuple("JudgeRow", ["judge", "pod", "project", "score"])
 
 class ScoreManager:
-    def __init__(self, _raw_scores, _num_pods, _threshold, _criteria_data):
+    def __init__(self, _raw_scores, _num_pods, _threshold, _criteria_data, _metadata_cols):
         self.top_five = []
         self.raw_scores = _raw_scores
         self.judge_rows = []
@@ -11,6 +11,7 @@ class ScoreManager:
         self.top_scores = []
         self.threshold = _threshold
         self.criteria_data = _criteria_data
+        self.metadata_cols = _metadata_cols
 
         self.create_PodScores(_num_pods)
         self.collect_judge_totals()

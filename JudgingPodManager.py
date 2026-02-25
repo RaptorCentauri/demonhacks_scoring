@@ -1,6 +1,6 @@
 from JudgingPod import JudgingPod
 
-class JudgingPoddManager:
+class JudgingPodManager:
     def __init__(self, _num_pods, _required_review_count):
         self.pod_list = []
         self.required_review_counts = _required_review_count

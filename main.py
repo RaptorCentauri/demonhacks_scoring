@@ -1,58 +1,38 @@
-from Assigner import Assigner
-from SubmissionManager import SubmissionManager
-from JudgingPodManager import JudgingPoddManager
-from ScoreManager import ScoreManager
-from CSVManager import CSVManager
+import argparse
+from phase_one import execute as execute_phase1
+from phase_two import execute as execute_phase2
 
+def run_phase1(args):
+    execute_phase1(args)
+    # phase 1 logic here
+    # pass
 
-SUBMISSION_COLUMNS = ["Project Title", "Submission Url", "Highest Step Completed"]  # update as needed
-submission_data = CSVManager.extract_data("submissions.csv", SUBMISSION_COLUMNS)
+def run_phase2(args):
+    # phase 2 logic here
+    execute_phase2(args)
+    # pass
 
+parser = argparse.ArgumentParser(description="DemonHacks Scoring System")
+subparsers = parser.add_subparsers(dest="command")
 
-submission_manager = SubmissionManager(submission_data)
+# Phase 1
+phase1_parser = subparsers.add_parser("phase1", help="Generate pod assignments")
+phase1_parser.add_argument("--submissions", required=True, help="Path to submissions CSV")
+phase1_parser.add_argument("--pods", type=int, required=True, help="Number of judging pods")
+phase1_parser.add_argument("--reviews", type=int, required=True, help="Required reviews per project")
 
-judging_pod_manager = JudgingPoddManager(8,3)
+# Phase 2
+phase2_parser = subparsers.add_parser("phase2", help="Calculate scores and top 5")
+phase2_parser.add_argument("--submissions", required=True, help="Path to submissions CSV")
+phase2_parser.add_argument("--scores", required=True, help="Path to judging sheet CSV")
+phase2_parser.add_argument("--pods", type=int, required=True, help="Number of judging pods")
+phase2_parser.add_argument("--threshold", type=float, required=True, help="Minimum pod score to advance")
 
-assigner = Assigner(submission_manager, judging_pod_manager)
+args = parser.parse_args()
 
-assigner.assign()
-
-assigner.validate_distribution()
-
-
-
-
-
-
-print("Submissions for Pod 0")
-assigner.print_full_submissions_for_pod(0)
-
-
-
-
-
-
-
-
-
-
-
-#
-
-#
-# valid_submissions = submission_manager.get_real_submissions()
-#
-# judging_pod_manager = JudgingPoddManager(8,3)
-# #
-# judging_pod_manager.distribute_projects_to_pods(valid_submissions)
-# #
-# judging_pod_manager.get_submission_count_per_judging_pod()
-#
-# # judging_pod_manager.print_judging_assignments()
-#
-#
-# score_manager = ScoreManager("Judging_Sheet.csv")
-# # print(score_manager.get_raw_submissions())
-# score_manager.get_scores()
-#
-# score_manager.get_scores_for_pod(3)
+if args.command == "phase1":
+    run_phase1(args)
+elif args.command == "phase2":
+    run_phase2(args)
+else:
+    parser.print_help()

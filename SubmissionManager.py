@@ -15,8 +15,8 @@ class SubmissionManager:
                 self.valid_submissions.append(row)
 
     def populate_real_submissions(self):
-        for index, row  in enumerate(self.valid_submissions):
-            submission = Submission(index, row["Project Title"], row["Submission Url"])
+        for index, row in enumerate(self.valid_submissions):
+            submission = Submission(int(row["Table Number"]), row["Project Title"], row["Submission Url"])
             self.real_submissions.append(submission)
 
     def get_raw_submissions(self):
@@ -28,10 +28,10 @@ class SubmissionManager:
     def get_real_submissions(self):
         return self.real_submissions
 
-
     def get_submission(self, submission_id):
-        return self.real_submissions[submission_id]
-
+        for submission in self.real_submissions:
+            if submission.get_id() == submission_id:
+                return submission
 
     def set_pods_for_submission(self, submission_id, pod_numbers):
         for submission in self.real_submissions:

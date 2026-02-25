@@ -11,13 +11,7 @@ def create_output_folder():
     os.makedirs(folder, exist_ok=True)
     return folder
 
-# def write_pod_file(folder, pod_number, submissions):
-#     filename = os.path.join(folder, f"pod_{pod_number}.txt")
-#     with open(filename, "w") as f:
-#         f.write(f"Submissions for Pod {pod_number}\n")
-#         f.write("=====================\n")
-#         for submission in submissions:
-#             f.write(f"{submission}\n")
+
 
 def write_pod_file(folder, pod_number, submissions):
     filename = os.path.join(folder, f"pod_{pod_number}.txt")
@@ -27,7 +21,9 @@ def write_pod_file(folder, pod_number, submissions):
         for submission in submissions:
             f.write(f"{submission}\n")
             for key, value in submission.get_custom_fields().items():
-                f.write(f"  {key}: {value}\n")
+                f.write(f"{key}\n")
+                f.write(f"{value}\n")
+                f.write("\n")
             f.write("\n")
 
 def write_master_file(folder, assigner, num_pods):
@@ -43,8 +39,13 @@ def write_master_file(folder, assigner, num_pods):
 def execute(args):
     # for custom quesrions on devpost
     domain = "List All Of The Domain Names Your Team Has Registered With Domain.Com During This Hackathon."
+    schools = "List All Of The Universities Or Schools  That Your Team Members Currently Attend."
+    feedback = "Share Feedback About Any Of The Technology You Interacted With At This Hackathon. Make Sure You Mention What Tech You're Reviewing (E.G. Git Hub, De So, Etc.)."
 
-    CUSTOM_COLUMNS = [domain]
+
+    CUSTOM_COLUMNS = [domain, schools, feedback]
+    # CUSTOM_COLUMNS = [schools]
+
 
     SUBMISSION_COLUMNS = ["Project Title", "Submission Url", "Table Number", "Highest Step Completed"] + CUSTOM_COLUMNS  # update as needed
 

@@ -19,7 +19,6 @@ class SubmissionManager:
             custom_fields = {col: row[col] for col in custom_columns}
             submission = Submission(int(row["Table Number"]), row["Project Title"], row["Submission Url"], custom_fields)
             self.real_submissions.append(submission)
-            self.real_submissions.append(submission)
 
     def get_raw_submissions(self):
         return self.raw_submissions
